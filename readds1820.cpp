@@ -12,6 +12,8 @@ int getTemp(double &temperaturepointer)
     char cstring[256];
     char check[265];
     char value[256];
+
+	//change this to your sensor address
     f.open("/sys/bus/w1/devices/28-031644c493ff/w1_slave", ios::in);
 	if (f.is_open()){
     	while (!f.eof())
